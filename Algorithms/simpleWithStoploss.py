@@ -2,10 +2,10 @@
 from AlgorithmImports import *
 # endregion
 
-class TrailingStopLoss(QCAlgorithm):
+class simpleWithStopless(QCAlgorithm):
     
     def Initialize(self):
-        self.SetStartDate(2017, 1, 1)
+        self.SetStartDate(2019, 1, 1)
         self.SetEndDate(2020, 1, 1)
         self.SetCash(1000880)
         self.qqq = self.AddEquity("QQQ", Resolution.Hour).Symbol
